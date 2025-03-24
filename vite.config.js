@@ -12,9 +12,10 @@ export default defineConfig({
   },
   
   build: {
-    outDir: 'dist-utools',
+    outDir: 'dist',
     assetsDir: 'assets',
     base: './',
+    sourcemap: true,
     rollupOptions: {
       output: {
         manualChunks: {
@@ -22,7 +23,8 @@ export default defineConfig({
           'xlsx': ['xlsx']
         }
       }
-    }
+    },
+    copyPublicDir: true
   },
   
   server: {

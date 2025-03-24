@@ -23,14 +23,13 @@ archive.on('error', (err) => {
   throw err
 })
 
-archive.pipe(output)
-
 // 添加构建文件
 archive.directory('dist/', false)
 
 // 添加插件配置文件
 archive.file('plugin.json', { name: 'plugin.json' })
-archive.file('preload.js', { name: 'preload.js' })
 archive.file('logo.png', { name: 'logo.png' })
+archive.file('preload.js', { name: 'preload.js' })
 
+archive.pipe(output)
 archive.finalize() 
