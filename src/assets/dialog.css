@@ -1,0 +1,80 @@
+/* 创建新的全局对话框样式 */
+.modern-dialog {
+  border-radius: 16px !important;
+  overflow: hidden;
+}
+
+.modern-dialog .el-dialog__header {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.modern-dialog .el-dialog__body {
+  padding: 24px !important;
+}
+
+.modern-dialog-header {
+  padding: 20px 24px;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ebeef5;
+}
+
+.modern-dialog-header h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.modern-dialog .close-btn {
+  background: transparent !important;
+  border: none !important;
+  color: #909399 !important;
+  transition: all 0.3s ease;
+}
+
+.modern-dialog .close-btn:hover {
+  color: #2c3e50 !important;
+  transform: rotate(90deg);
+}
+
+/* 表格样式优化 */
+.modern-table {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+}
+
+.modern-table .el-table__header th {
+  background: #f8f9fa !important;
+  color: #2c3e50;
+  font-weight: 600;
+  padding: 16px 0;
+}
+
+.modern-table .el-table__row td {
+  padding: 16px 0;
+}
+
+/* 按钮样式优化 */
+.modern-button {
+  border-radius: 8px !important;
+  padding: 10px 20px !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+}
+
+.modern-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 标签样式优化 */
+.modern-tag {
+  border-radius: 6px !important;
+  padding: 6px 12px !important;
+  margin: 4px !important;
+} 
